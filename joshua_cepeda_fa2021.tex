@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+% joshua's resume
+
+% package includes
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{sectsty}
+\usepackage[margin=0.5in]{geometry}
+
+% custom commands
+\newcommand{\listing}[2]{#1 \hfill \strong{#2}}
+
+% custom fonts
+\setmainfont[
+    BoldFont=SourceSansPro-SemiBold.ttf
+]{SourceSansPro-Regular.ttf}
+\sectionfont{\LARGE}
+
+% formatting
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\setlength\parindent{0pt}
+\titlespacing{\section}{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+% document
+\begin{document}
+    % header
+    \begin{center}
+        {\Huge \strong{Joshua K.A. Cepeda}}
+
+        \vspace{5pt}
+
+        jcepeda@nd.edu $\cdot$ (574) 302-6192
+
+        \href{https://github.com/centipeda}{github.com/centipeda} 
+        $\cdot$ \href{https://centipeda.cc}{centipeda.cc} 
+        $\cdot$ \href{https://linkedin.com/in/joshua-cepeda}{linked.com/in/joshua-cepeda}
+    \end{center}
+    \vspace{-10pt}
+    \hrulefill
+
+
+    % education section
+    \section*{Education} \vspace{-10pt}
+
+    \listing{Bachelor of Science in Computer Engineering, University of Notre Dame}{Expected Graduation May 2022}
+    \vspace{-10pt}
+    \begin{itemize}
+        \setlength\itemsep{-4pt}
+        \item 3.6/4.0 GPA
+        \item Trustey Family Merit Scholar
+    \end{itemize}
+
+    \listing{Graduate, John F. Kennedy High School, Tamuning, Guam}{2014 - 2018}
+    \vspace{-10pt}
+    \begin{itemize}
+        \setlength\itemsep{-4pt}
+        \item National Merit Scholar
+    \end{itemize}
+
+    \section*{Key Skills} \vspace{-20pt}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \setlength\itemsep{-4pt}
+            \item Python (5 years)
+            \item C/C++ (4 years)
+            \item JavaScript, frontend \& node.js (5 years)
+            \item MATLAB (1 year)
+            \item Linux/Unix Environments (4 years)
+            \item Yocto Project/bitbake (1 year)
+            \item Shell Scripting (2 years)
+            \item HTML/CSS (5 years)
+            \item LaTeX (3 years)
+            \item Microsoft Office
+            % \item[\vspace{\fill}]
+        \end{itemize}
+    \end{multicols}
+
+    \section*{Work Experience}
+    \listing{Research Assistant, University of Notre Dame Center for Research Computing}{Spring 2019 - Spring 2021}
+
+    \section*{Activities}
+
+    \section*{Personal}
+\end{document}

@@ -11,11 +11,19 @@
 
 % custom commands
 \newcommand{\listing}[2]{#1 \hfill \strong{#2}}
+\newcommand{\details}[1]{
+    \vspace{-10pt}
+    \begin{itemize}
+        \setlength\itemsep{-4pt}
+        #1
+    \end{itemize}
+}
+\newcommand{\sect}[1]{\vspace{-20pt}\section*{#1}\vspace{-10pt}}
 
 % custom fonts
 \setmainfont[
-    BoldFont=SourceSansPro-SemiBold.ttf
-]{SourceSansPro-Regular.ttf}
+    BoldFont=SourceSansPro-Regular.ttf
+]{SourceSansPro-Light.ttf}
 \sectionfont{\LARGE}
 
 % formatting
@@ -44,27 +52,30 @@
     \end{center}
     \vspace{-10pt}
     \hrulefill
+    \vspace{-15pt}
 
 
     % education section
-    \section*{Education} \vspace{-10pt}
+    \vspace{10pt}
+    \sect{Education}
+    % \section*{Education} \vspace{-10pt}
 
     \listing{Bachelor of Science in Computer Engineering, University of Notre Dame}{Expected Graduation May 2022}
-    \vspace{-10pt}
-    \begin{itemize}
-        \setlength\itemsep{-4pt}
+    \details{
         \item 3.6/4.0 GPA
         \item Trustey Family Merit Scholar
-    \end{itemize}
+    }
 
-    \listing{Graduate, John F. Kennedy High School, Tamuning, Guam}{2014 - 2018}
+    % \listing{Graduate, John F. Kennedy High School, Tamuning, Guam}{2014 - 2018}
+    % \details{
+    %     \item National Merit Scholar
+    % }
+
+
+    % skills section
     \vspace{-10pt}
-    \begin{itemize}
-        \setlength\itemsep{-4pt}
-        \item National Merit Scholar
-    \end{itemize}
-
-    \section*{Key Skills} \vspace{-20pt}
+    \sect{Key Skills}
+    \begin{center}\begin{minipage}{430pt}
     \begin{multicols}{2}
         \begin{itemize}
             \setlength\itemsep{-4pt}
@@ -77,15 +88,70 @@
             \item Shell Scripting (2 years)
             \item HTML/CSS (5 years)
             \item LaTeX (3 years)
-            \item Microsoft Office
+            \item Microsoft Office Suite
             % \item[\vspace{\fill}]
         \end{itemize}
     \end{multicols}
+    \end{minipage}\end{center}
 
-    \section*{Work Experience}
-    \listing{Research Assistant, University of Notre Dame Center for Research Computing}{Spring 2019 - Spring 2021}
+    \sect{Work Experience}
+    \listing{Research Assistant, Center for Research Computing}{Spring 2019 - Spring 2021}
+    \details{
+        \item Collaborated with students from other universities to write a System-On-Chip benchmarking suite in shell script
+        \item Built custom Linux build environment with Yocto targeting Enclustra System-On-Chip board
+    }
 
-    \section*{Activities}
+    \listing{Computing Assistant, Notre Dame Department of Engineering Science Computing }{Fall 2019 - Spring 2021}
+    \details{
+        \item Wrote PowerShell and shell scripts to automate installation and maintenance of Windows computer clusters
+        \item Performed routine maintenance and updates on school Windows and Linux computer clusters
+    }
 
-    \section*{Personal}
+    \listing{Teaching Assistant, Notre Dame Department of Computer Science and Engineering}{Spring 2021 - Current}
+    \details{
+        \item Courses: Systems Programming, Operating Systems
+        \item Tutored fellow students core concepts of Unix systems programming and operating systems principles
+        \item Assisted with debugging and grading students' Python, shell script, and C programs
+    }
+
+    \vspace{-10pt}
+    \sect{Classes}
+    \listing{Open-Source Software Development}{Spring 2020}
+    \details{
+        \item Learned precepts of open-source software design and development 
+        \item Worked in a small team in scrum-style sprints to develop an open-source application
+        \item Used the Vue.js reactive framework to develop a web application to aid in Lego designs
+    }
+    
+    \listing{Introduction to Compilers \& Language Design}{Spring 2021}
+    \details{
+        \item Learned to formalize programming language syntax via creation of context-free grammars
+        \item Implemented a strictly-typed, C-style procedural programming language 
+        compiler with Flex, YACC, Bison, and C
+    }
+
+    \vspace{-10pt}
+    \sect{Activities}
+    \listing{Notre Dame Data Club Hackathon}{Fall 2020}
+    \details{
+        \item Worked in a small team to perform data analysis with Python and R
+        \item Developed an interactive website with to present findings with HTML/CSS/Javascript
+    }
+
+    \listing{Irish Hacks Hackathon}{Fall 2019}
+    \details{
+        \item Worked in a small team to develop a Chrome extension to scan for and retrieve news
+        articles, using JavaScript and the IBM Watson API
+    }
+
+    \sect{Personal/Hobbies}
+    \vspace{-10pt}
+    \begin{multicols}{2}
+    \details{
+        \setlength\itemsep{-4pt}
+        \item Training in classical piano
+        \item Game development with Godot, Unity, and PICO-8
+        \item Running and playing tabletop role-playing games
+    }
+    \end{multicols}
 \end{document}

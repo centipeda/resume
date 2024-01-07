@@ -19,7 +19,7 @@
         #1
     \end{itemize}
 }
-\newcommand{\sect}[1]{\vspace{-20pt}\section*{#1}\vspace{-10pt}}
+\newcommand{\sect}[1]{\vspace{-15pt}\section*{#1}\vspace{-10pt}}
 
 % custom fonts
 \setmainfont[
@@ -49,7 +49,7 @@
 
         \href{https://github.com/centipeda}{github.com/centipeda} 
         $\cdot$ \href{https://centipeda.cc}{centipeda.cc} 
-        $\cdot$ \href{https://linkedin.com/in/joshua-cepeda}{linked.com/in/joshua-cepeda}
+        $\cdot$ \href{https://linkedin.com/in/joshua-cepeda}{linkedin.com/in/joshua-cepeda}
     \end{center}
     \vspace{-10pt}
     \hrulefill
@@ -59,7 +59,6 @@
     % education section
     \vspace{20pt}
     \sect{Education}
-    % \section*{Education} \vspace{-10pt}
 
     \listing{Bachelor of Science in Computer Engineering, University of Notre Dame}{2018 - 2022}
     \details{
@@ -70,32 +69,36 @@
 
     % skills section
     \sect{Key Skills}
-    \begin{center}\begin{minipage}{350pt}
+    \vspace{-10pt}
     \begin{multicols}{2}
         \begin{itemize}
             \setlength\itemsep{-4pt}
-            \item Python (5 years)
-            \item C/C++ (4 years)
-            \item JavaScript (5 years)
-            \item MATLAB (1 year)
-            \item Yocto Project/bitbake (1 year)
-            \item Shell Scripting (2 years)
-            \item HTML/CSS (5 years)
-            \item LaTeX (3 years)
-            % \item[\vspace{\fill}]
+            \item Embedded C programming
+            \item Reverse engineering (IDA Pro)
+            \item Version control (Git)
+            \item Continuous integration (GitLab CI, GitHub Actions)
+            \item UEFI firmware development (EDK2, UEFITool)
+            \item BMC software tools (IPMI, Redfish, OpenBMC)
+            \item Embedded cryptography
+            \item Shell scripting and automation
+            \item Python programming
+            \item Embedded communications (I\textsuperscript{2}C, SPI)
         \end{itemize}
     \end{multicols}
-    \end{minipage}\end{center}
-
-
 
     \sect{Work Experience}
-    \listing{Software Engineer, Virtalica Inc.}{2022 - Present}
+    \listing{Software Engineer, Private Machines Inc./Virtalica Inc.}{2021 - Present}
     \details{
-        \item Developed REST API to interface with S3 and NFS cloud backends with Django and Python
-        \item Used C to develop highly concurrent custom NGINX module code
-        \item Programmed firmware in C for use in secure embedded applications
-        \item Assembled server hardware for use in secure computing environments
+        \item Led development on custom UEFI BIOS using EDK2 and non-EDK2 firmware modules
+        \item Designed and implemented BIOS firmware integrity and verification check
+        \item Maintained NGINX-based networking application in C
+    }
+
+    \listing{Teaching Assistant, Notre Dame Department of Computer Science and Engineering}{2021 - 2022}
+    \details{
+        \item Courses: Systems Programming, Operating Systems
+        \item Tutored fellow students core concepts of Unix systems programming and operating systems principles
+        \item Assisted with debugging and grading students' Python, shell script, and C programs
     }
 
     \listing{Research Assistant, Center for Research Computing}{2019 - 2021}
@@ -110,24 +113,12 @@
         \item Performed routine maintenance and updates on school Windows and Linux computer clusters
     }
 
-    \listing{Teaching Assistant, Notre Dame Department of Computer Science and Engineering}{2021 - 2022}
-    \details{
-        \item Courses: Systems Programming, Operating Systems
-        \item Tutored fellow students core concepts of Unix systems programming and operating systems principles
-        \item Assisted with debugging and grading students' Python, shell script, and C programs
-    }
-
     \sect{Activities}
-    \listing{Notre Dame Data Club Hackathon}{2020}
+    \listing{Notre Dame Hesburgh Hackathon}{2021}
     \details{
-        \item Worked in a small team to perform data analysis with Python and R
-        \item Developed an interactive website with to present findings with HTML/CSS/Javascript
-    }
-
-    \listing{Irish Hacks Hackathon}{2019}
-    \details{
-        \item Worked in a small team to develop a Chrome extension to scan for and retrieve news
-        articles, using JavaScript and the IBM Watson API
+        \item Worked over 48 hours to prototype an Android mobile app in Flutter
+        \item Interfaced with web APIs to present geoloation-based birdwatching challenges
+        \item Won first place in competition
     }
 
     \sect{Personal/Hobbies}

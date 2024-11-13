@@ -45,7 +45,7 @@
 
         \vspace{5pt}
 
-        joshua@centipeda.cc
+        joshua.ka.cepeda@gmail.com
 
         \href{https://github.com/centipeda}{github.com/centipeda} 
         $\cdot$ \href{https://centipeda.cc}{centipeda.cc} 
@@ -58,40 +58,15 @@
 
     % education section
     \vspace{20pt}
-    \sect{Education}
-
-    \listing{Bachelor of Science in Computer Engineering, University of Notre Dame}{2018 - 2022}
-    \details{
-        \item 3.6/4.0 GPA
-        \item Trustey Family Merit Scholar
-    }
-
-
-    % skills section
-    \sect{Key Skills}
-    \vspace{-10pt}
-    \begin{multicols}{2}
-        \begin{itemize}
-            \setlength\itemsep{-4pt}
-            \item Embedded C programming
-            \item Reverse engineering (IDA Pro)
-            \item Version control (Git)
-            \item Continuous integration (GitLab CI, GitHub Actions)
-            \item UEFI firmware development (EDK2, UEFITool)
-            \item BMC software tools (IPMI, Redfish, OpenBMC)
-            \item Embedded cryptography
-            \item Shell scripting and automation
-            \item Python programming
-            \item Embedded communications (I\textsuperscript{2}C, SPI)
-        \end{itemize}
-    \end{multicols}
 
     \sect{Work Experience}
-    \listing{Software Engineer, Private Machines Inc./Virtalica Inc.}{2021 - Present}
+    \listing{Software Engineer, Private Machines Inc.}{2022 - Present}
     \details{
-        \item Led development on custom UEFI BIOS using EDK2 and non-EDK2 firmware modules
-        \item Designed and implemented BIOS firmware integrity and verification check
-        \item Maintained NGINX-based networking application in C
+        \item Led development of a secure x86-64 UEFI bootloader in implemented in C using EDK2 modules
+        \item Conducted firmware-level cybersecurity research and threat analysis on Linux and Windows
+        \item Hardened fleet of Linux server systems against firmware-level (BIOS, BMC) attacks in time-sensitive scenarios
+        \item Assisted in bringing production of server hardware to scale, incl. electronics rework, logistics, shipping, expense tracking, and quality control
+        \item Maintained UEFI BIOS code via custom Python/C++ build system and GitLab continuous integration tooling
     }
 
     \listing{Teaching Assistant, Notre Dame Department of Computer Science and Engineering}{2021 - 2022}
@@ -113,22 +88,39 @@
         \item Performed routine maintenance and updates on school Windows and Linux computer clusters
     }
 
+    \sect{Education}
+    \listing{Bachelor of Science in Computer Engineering, University of Notre Dame}{2018 - 2022}
+    \details{
+        \item 3.6/4.0 GPA
+        \item Trustey Family Merit Scholar
+    }
+
+    % skills section
+    \sect{Key Skills}
+    \vspace{-10pt}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \setlength\itemsep{-4pt}
+            \item Embedded programming: C, Make, CMake
+            \item Automation and scripting: Bash, Python
+            \item CI/CD tooling: GitLab CI, GitHub Actions
+            \item Version control systems: Git, GitLab, GitHub
+            \item Linux kernel driver development
+            \item UEFI firmware development: EDK2, UEFITool
+            \item BMC software tools: IPMI, Redfish, OpenBMC
+            \item Reverse engineering x86 and ARM applications: IDA
+            \item Embedded cryptography
+            \item Embedded communications protocols: I\textsuperscript{2}C, SPI
+            \item Electronics hardware: soldering, hot air rework
+        \end{itemize}
+    \end{multicols}
+
     \sect{Activities}
-    \listing{Notre Dame Hesburgh Hackathon}{2021}
+    \listing{Notre Dame Hesburgh Hackathon}{March 2022}
     \details{
         \item Worked over 48 hours to prototype an Android mobile app in Flutter
         \item Interfaced with web APIs to present geoloation-based birdwatching challenges
-        \item Won first place in competition
+        \item Won first place in competition with team
     }
 
-    \sect{Personal/Hobbies}
-    \vspace{-10pt}
-    \begin{multicols}{2}
-    \details{
-        \setlength\itemsep{-4pt}
-        \item Training in classical piano
-        \item Game development with Godot, Unity, and PICO-8
-        \item Running and playing tabletop role-playing games
-    }
-    \end{multicols}
 \end{document}
